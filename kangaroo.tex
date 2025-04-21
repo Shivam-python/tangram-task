@@ -1,0 +1,19 @@
+\documentclass{article}
+\usepackage{tikz}
+\usepackage{fullpage}
+\usepackage{tangram}
+
+\begin{document}
+\begin{tikzpicture}
+
+% Tangram pieces with various transformations
+\PieceTangram[TangSol]<rotate=90>(2,3){Large triangle 1}
+\PieceTangram[TangSol]<xscale=-1>(5,1){Large triangle 2}
+\PieceTangram[TangSol]<yscale=-1, rotate=180>(4,2){Medium triangle}
+\PieceTangram[TangSol](1,4){Small triangle 1}
+\PieceTangram[TangSol]<xscale=-1, yscale=-1>(3,3){Small triangle 2}
+\PieceTangram[TangSol]<rotate=270>(2,1){Square}
+\PieceTangram[TangSol]<xscale=-1, rotate=90>(0,2){Parallelogram}
+
+\end{tikzpicture}
+\end{document}
